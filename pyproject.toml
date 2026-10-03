@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "handoff-brief-engine"
+version = "0.1.0"
+description = "Handoff Brief Engine v0 — turn messy handoff text into a six-heading 可接手包 (handoff brief)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Handoff Brief Engine contributors" }]
+dependencies = []
+
+[project.scripts]
+handoff-brief-engine = "handoff_brief_engine.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["handoff_brief_engine*"]

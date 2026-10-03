@@ -1,0 +1,36 @@
+# Generated briefs
+out/
+
+# Local dogfood runs
+dogfood/
+
+# Secrets and local env
+.env
+.env.*
+secrets
+secrets/
+*.pem
+*.key
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtualenvs and packaging
+.venv/
+venv/
+env/
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Caches and editor files
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.DS_Store
+*.swp
